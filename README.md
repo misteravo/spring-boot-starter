@@ -14,7 +14,7 @@ A minimal Spring Boot starter project to help you quickly bootstrap RESTful APIs
 ### Prerequisites
 
 - Java 21 or higher
-- Gradle 7+ (or use the included Gradle Wrapper)
+- Gradle 8+ (or use the included Gradle Wrapper)
 
 ### Running the Application
 
