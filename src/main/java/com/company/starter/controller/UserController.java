@@ -1,4 +1,4 @@
-package com.starter.controller;
+package com.company.starter.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.starter.entity.User;
-import com.starter.repository.UserRepository;
+import com.company.starter.entity.User;
+import com.company.starter.repository.UserRepository;
 
 @RestController
 @RequestMapping("/api/users")
