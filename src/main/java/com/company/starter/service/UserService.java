@@ -19,22 +19,18 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    // Create a new user
     public User createUser(User user) {
         return userRepository.save(user);
     }
 
-    // Get all users
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
-    // Get a user by ID
     public Optional<User> getUserById(Long id) {
         return userRepository.findById(id);
     }
 
-    // Update an existing user
     public User updateUser(Long id, User userDetails) {
         Optional<User> optionalUser = userRepository.findById(id);
         if (optionalUser.isPresent()) {
@@ -46,7 +42,6 @@ public class UserService {
         return null;  // You can throw an exception here if needed
     }
 
-    // Delete a user
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
     }
